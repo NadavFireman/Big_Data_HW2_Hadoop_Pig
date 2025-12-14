@@ -19,7 +19,7 @@ The project successfully implemented core Big Data engineering skills, including
 | **`DATA.txt`, `DATA1.txt`... `DATA4.txt`** | **Hadoop/Pig Scripts (Code):** These files contain the working scripts written in Pig Latin. They define the logic for data loading, aggregation, ordering, and text manipulation. | **Solution Code** |
 | **`df.txt`... `df4.txt`** | **Output Files (Results):** Segmented output files showing the results of the Pig scripts, including calculated averages and final text processing results, as required by the assignment. | **Final Output** |
 | **`data000.txt`, `data002.txt`** | **Input Data:** Sample raw input files used for the distributed processing. | **Input Data** |
-| **`docs/Assignment_Instructions_2.pdf`** | Original assignment instructions. | **Documentation** |
+| **`Assignment_Instructions_2.pdf`** | Original assignment instructions. | **Documentation** |
 
 ***
 *Course: Big Data (Hadoop/Pig), Shenkar College, IE&M*
