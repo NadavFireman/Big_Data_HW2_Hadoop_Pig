@@ -4,7 +4,7 @@ This repository contains the solution for the second submission assignment in th
 
 The project successfully implemented core Big Data engineering skills, including complex aggregation and text processing on fragmented datasets, achieving a grade of **85**.
 
-## 🎯 Key Skills Demonstrated
+## Key Skills Demonstrated
 
 * **Hadoop/Pig Latin Mastery:** Utilizing the Pig Latin language for efficient data manipulation and analysis in a distributed environment (MapReduce abstraction).
 * **Distributed Aggregation:** Implementing complex averaging, ordering, and filtering logic across multiple input files simultaneously.
