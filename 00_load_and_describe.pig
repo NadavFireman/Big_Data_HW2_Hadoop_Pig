@@ -4,9 +4,3 @@ text3:chararray, text4hararray, text5chararray);
 DESCRIBE data
 SH echo '********************************************** data  ***********************************';
 DUMP data;
-
-
-
-
-
-
