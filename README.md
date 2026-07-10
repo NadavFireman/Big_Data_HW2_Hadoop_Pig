@@ -1,25 +1,26 @@
-# Big Data HW2: Hadoop/Pig Distributed Processing Solution (Grade 85)
+# Big Data HW2: Hadoop/Pig Solution (Grade 85)
 
-This repository contains the solution for the second submission assignment in the Big Data course (Shenkar College, IE&M). The project showcases the ability to process massive, distributed datasets using the **Hadoop/Pig** framework.
-
-The work successfully implemented core Big Data engineering skills, including aggregation, filtering, and advanced text manipulation on fragmented datasets, resulting in a grade of **85**.
+This repository contains the solution for the second assignment in the Big Data course (Shenkar College, IE&M) — Pig Latin scripts running on Hadoop that process a fragmented, multi-file customer dataset: purchase statistics, customer ranking, and text processing, with the raw execution output of every script included.
 
 ## Key Skills Demonstrated
 
-* **Hadoop/Pig Expertise:** Applying the Pig Latin language to efficiently manipulate and analyze large volumes of data in a distributed environment (MapReduce abstraction).
-* **Distributed Calculations:** Performing complex aggregation (averaging, summing) and sorting logic across multiple input files simultaneously.
-* **Advanced Text Handling:** Using Pig functions (SIZE, LOWER, CONCAT, REPLACE) to clean, extract, and standardize unstructured text data.
-* **Handling Data Quality:** Demonstrating the ability to fix data issues like inconsistent capitalization and perform reliable data comparisons.
-* **Multi-File Data Management:** Managing and combining data loaded from multiple source files, simulating a real-world HDFS environment.
+* **Pig Latin on Hadoop (MapReduce abstraction):** LOAD with typed schemas via PigStorage, FOREACH...GENERATE transformations, and DESCRIBE/DUMP inspection with shell (SH) integration for labeled outputs.
+* **Multi-File Ingestion:** Combining several source files in a single LOAD glob — '{data000.txt, data000.txt, data002.txt}' — simulating fragmented HDFS inputs.
+* **Aggregation & Ranking:** Per-customer total and average across 10 purchase columns, CASE-based segmentation into High/Mid/Low tiers, and global ORDER BY + LIMIT to extract the top and bottom customers.
+* **Text Processing:** SIZE for character counts, LOWER for normalization, CONCAT for merging five text fields, and REPLACE for stop-word removal ("and"/"the").
 
-## Repository Content - Hadoop/Pig Files
+## Repository Structure
 
-| File Name | Description | Role in Assignment |
-| :--- | :--- | :--- |
-| **DATA.txt, DATA1.txt... DATA4.txt** | **Pig Scripts (Code):** These files contain the working code written in Pig Latin. They define the logic for data loading, calculating averages, sorting, and text manipulation. | Solution Code |
-| **df.txt... df4.txt** | **Output Files (Results):** Segmented text files showing the final results of the Pig scripts, including calculated averages and text processing outputs. | Final Output |
-| **data000.txt, data002.txt** | **Input Data:** Sample raw input files used for the distributed processing. | Input Data |
-| **EX2.pdf** | Original assignment instructions. | Documentation |
+| File | Role |
+| :--- | :--- |
+| `00_load_and_describe.pig` | Loads the multi-file dataset with a typed schema and dumps it for inspection |
+| `01_purchase_summary_tiers.pig` | Sum + average per customer, High/Mid/Low tiering (CASE), sorted by average |
+| `02_top_customer_by_avg.pig` | The single customer with the highest purchase average (ORDER + LIMIT) |
+| `03_bottom_customer_by_avg.pig` | The single customer with the lowest purchase average |
+| `04_text_processing.pig` | Character counts, lowercasing, concatenation, and "and"/"the" removal |
+| `output_0X_*.txt` | Raw execution output of each script, including DESCRIBE schemas |
+| `data000.txt`, `data002.txt` | Raw input data files |
+| `Assignment_Instructions_2.pdf` | Original assignment instructions |
 
 ***
 *Course: Big Data (Hadoop/Pig), Shenkar College, IE&M*
