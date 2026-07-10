@@ -31,9 +31,3 @@ data3 = ORDER data2 BY AVG DESC;
 DESCRIBE data3;
 SH echo '********************************************** data3  ***********************************';
 DUMP data3;
-
-
-
-
-
-
