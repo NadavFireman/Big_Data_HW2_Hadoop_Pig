@@ -23,6 +23,3 @@ This repository contains the solution for the second assignment in the Big Data 
 * **`output_04_text_processing.txt`**: Execution output — character counts, lowercased text, and the concatenated text with stop-words removed.
 * **`data000.txt`**, **`data002.txt`**: Raw input data files (40 customer records each: purchase amounts + free-text fields), combined at load time.
 * **`Assignment_Instructions_2.pdf`**: Original assignment instructions.
-
-***
-*Course: Big Data (Hadoop/Pig), Shenkar College, IE&M*
