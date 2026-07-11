@@ -1,4 +1,4 @@
-# Big Data HW2: Hadoop/Pig Distributed Processing Solution (Grade 85)
+# Big Data HW2: Hadoop/Pig Distributed Processing Solution
 
 This repository contains the solution for the second assignment in the Big Data course (Shenkar College, IE&M). The project processes a fragmented, multi-file customer dataset using **Pig Latin on the Hadoop framework** (MapReduce abstraction) — computing purchase statistics, ranking customers, and performing text processing — with the raw execution output of every script included.
 
